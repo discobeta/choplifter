@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "tank_right_level.png",
+      "idiom" : "tv"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

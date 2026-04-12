@@ -1,0 +1,385 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA00000000000000000001B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000001 /* AppDelegate.swift */; };
+		AA00000000000000000002B1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000002 /* GameViewController.swift */; };
+		AA00000000000000000003B1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000003 /* Constants.swift */; };
+		AA00000000000000000004B1 /* InputManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000004 /* InputManager.swift */; };
+		AA00000000000000000005B1 /* DifficultyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000005 /* DifficultyManager.swift */; };
+		AA00000000000000000006B1 /* HUDNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000006 /* HUDNode.swift */; };
+		AA00000000000000000007B1 /* Helicopter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000007 /* Helicopter.swift */; };
+		AA00000000000000000008B1 /* Hostage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000008 /* Hostage.swift */; };
+		AA00000000000000000009B1 /* Barracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000009 /* Barracks.swift */; };
+		AA0000000000000000000AB1 /* Tank.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000A /* Tank.swift */; };
+		AA0000000000000000000BB1 /* Jet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000B /* Jet.swift */; };
+		AA0000000000000000000CB1 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000C /* Base.swift */; };
+		AA0000000000000000000DB1 /* Bullet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000D /* Bullet.swift */; };
+		AA0000000000000000000EB1 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000E /* MenuScene.swift */; };
+		AA0000000000000000000FB1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000F /* GameScene.swift */; };
+		AA00000000000000000010B1 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000010 /* GameOverScene.swift */; };
+		AA00000000000000000011B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000011 /* Assets.xcassets */; };
+		AA00000000000000000012B1 /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000013 /* MusicManager.swift */; };
+		AA00000000000000000013B1 /* fortunate-son.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000014 /* fortunate-son.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA0000000000000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA0000000000000000000002 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		AA0000000000000000000003 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AA0000000000000000000004 /* InputManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputManager.swift; sourceTree = "<group>"; };
+		AA0000000000000000000005 /* DifficultyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyManager.swift; sourceTree = "<group>"; };
+		AA0000000000000000000006 /* HUDNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUDNode.swift; sourceTree = "<group>"; };
+		AA0000000000000000000007 /* Helicopter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helicopter.swift; sourceTree = "<group>"; };
+		AA0000000000000000000008 /* Hostage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hostage.swift; sourceTree = "<group>"; };
+		AA0000000000000000000009 /* Barracks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barracks.swift; sourceTree = "<group>"; };
+		AA000000000000000000000A /* Tank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tank.swift; sourceTree = "<group>"; };
+		AA000000000000000000000B /* Jet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jet.swift; sourceTree = "<group>"; };
+		AA000000000000000000000C /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		AA000000000000000000000D /* Bullet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bullet.swift; sourceTree = "<group>"; };
+		AA000000000000000000000E /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		AA000000000000000000000F /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		AA0000000000000000000010 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		AA0000000000000000000011 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA0000000000000000000012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA0000000000000000000013 /* MusicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManager.swift; sourceTree = "<group>"; };
+		AA0000000000000000000014 /* fortunate-son.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "fortunate-son.mp3"; sourceTree = "<group>"; };
+		AA0000000000000000000020 /* ChopLifter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChopLifter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA00000000000000000F0001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA00000000000000000C0001 = {
+			isa = PBXGroup;
+			children = (
+				AA00000000000000000C0002 /* ChopLifter */,
+				AA00000000000000000C0003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA00000000000000000C0002 /* ChopLifter */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000001 /* AppDelegate.swift */,
+				AA0000000000000000000002 /* GameViewController.swift */,
+				AA0000000000000000000003 /* Constants.swift */,
+				AA0000000000000000000004 /* InputManager.swift */,
+				AA0000000000000000000005 /* DifficultyManager.swift */,
+				AA0000000000000000000006 /* HUDNode.swift */,
+				AA0000000000000000000007 /* Helicopter.swift */,
+				AA0000000000000000000008 /* Hostage.swift */,
+				AA0000000000000000000009 /* Barracks.swift */,
+				AA000000000000000000000A /* Tank.swift */,
+				AA000000000000000000000B /* Jet.swift */,
+				AA000000000000000000000C /* Base.swift */,
+				AA000000000000000000000D /* Bullet.swift */,
+				AA000000000000000000000E /* MenuScene.swift */,
+				AA000000000000000000000F /* GameScene.swift */,
+				AA0000000000000000000010 /* GameOverScene.swift */,
+				AA0000000000000000000013 /* MusicManager.swift */,
+				AA0000000000000000000011 /* Assets.xcassets */,
+				AA0000000000000000000014 /* fortunate-son.mp3 */,
+				AA0000000000000000000012 /* Info.plist */,
+			);
+			path = ChopLifter;
+			sourceTree = "<group>";
+		};
+		AA00000000000000000C0003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000020 /* ChopLifter.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA00000000000000000D0001 /* ChopLifter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA00000000000000000E0002 /* Build configuration list for PBXNativeTarget "ChopLifter" */;
+			buildPhases = (
+				AA00000000000000000D0002 /* Sources */,
+				AA00000000000000000F0001 /* Frameworks */,
+				AA00000000000000000D0003 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChopLifter;
+			productName = ChopLifter;
+			productReference = AA0000000000000000000020 /* ChopLifter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA00000000000000000E0001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AA00000000000000000D0001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA00000000000000000E0003 /* Build configuration list for PBXProject "ChopLifter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA00000000000000000C0001;
+			productRefGroup = AA00000000000000000C0003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA00000000000000000D0001 /* ChopLifter */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA00000000000000000D0003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA00000000000000000011B1 /* Assets.xcassets in Resources */,
+				AA00000000000000000013B1 /* fortunate-son.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA00000000000000000D0002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA00000000000000000001B1 /* AppDelegate.swift in Sources */,
+				AA00000000000000000002B1 /* GameViewController.swift in Sources */,
+				AA00000000000000000003B1 /* Constants.swift in Sources */,
+				AA00000000000000000004B1 /* InputManager.swift in Sources */,
+				AA00000000000000000005B1 /* DifficultyManager.swift in Sources */,
+				AA00000000000000000006B1 /* HUDNode.swift in Sources */,
+				AA00000000000000000007B1 /* Helicopter.swift in Sources */,
+				AA00000000000000000008B1 /* Hostage.swift in Sources */,
+				AA00000000000000000009B1 /* Barracks.swift in Sources */,
+				AA0000000000000000000AB1 /* Tank.swift in Sources */,
+				AA0000000000000000000BB1 /* Jet.swift in Sources */,
+				AA0000000000000000000CB1 /* Base.swift in Sources */,
+				AA0000000000000000000DB1 /* Bullet.swift in Sources */,
+				AA0000000000000000000EB1 /* MenuScene.swift in Sources */,
+				AA0000000000000000000FB1 /* GameScene.swift in Sources */,
+				AA00000000000000000010B1 /* GameOverScene.swift in Sources */,
+				AA00000000000000000012B1 /* MusicManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA00000000000000000F0010 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+			};
+			name = Debug;
+		};
+		AA00000000000000000F0011 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				TVOS_DEPLOYMENT_TARGET = 16.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA00000000000000000F0012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VMRMC7635R;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ChopLifter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.choplifter.game;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		AA00000000000000000F0013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VMRMC7635R;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = ChopLifter/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.choplifter.game;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA00000000000000000E0002 /* Build configuration list for PBXNativeTarget "ChopLifter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA00000000000000000F0012 /* Debug */,
+				AA00000000000000000F0013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA00000000000000000E0003 /* Build configuration list for PBXProject "ChopLifter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA00000000000000000F0010 /* Debug */,
+				AA00000000000000000F0011 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA00000000000000000E0001 /* Project object */;
+}

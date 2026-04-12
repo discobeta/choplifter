@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "tank_left_up.png",
+      "idiom" : "tv"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
