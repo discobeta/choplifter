@@ -34,6 +34,10 @@ struct GameConfig {
     static let helicopterSize = CGSize(width: 80, height: 35)
     static let rotorWidth: CGFloat = 70
 
+    // Helicopter tilt
+    static let helicopterTiltAngle: CGFloat = 12.0 * .pi / 180.0  // ~12 degrees
+    static let helicopterTiltLerpSpeed: CGFloat = 10.0             // radians/sec interpolation rate
+
     // Hostages
     static let hostagesPerBarracks = 16
     static let totalBarracks = 4

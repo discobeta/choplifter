@@ -45,6 +45,9 @@ class Helicopter: SKNode {
     /// Remembers last lateral direction so forward-facing picks the right half sprite
     private var lastLateralFacing: FacingDirection = .right
 
+    /// Current visual tilt angle (radians). Positive = nose tilts left-down, negative = nose tilts right-down.
+    private var currentTiltAngle: CGFloat = 0
+
     // MARK: - Computed properties
 
     var isGrounded: Bool { state == .grounded }
@@ -128,7 +131,33 @@ class Helicopter: SKNode {
         newY = max(minY, min(newY, maxY))
 
         position = CGPoint(x: newX, y: newY)
+        updateTilt(dx: dx, deltaTime: deltaTime)
         updateVisualSize()
+    }
+
+    // MARK: - Directional Tilt
+
+    private func updateTilt(dx: CGFloat, deltaTime: TimeInterval) {
+        // Target angle: moving right → negative (clockwise), left → positive (counter-clockwise)
+        let targetAngle: CGFloat
+        if dx > 0.3 {
+            targetAngle = -GameConfig.helicopterTiltAngle
+        } else if dx < -0.3 {
+            targetAngle = GameConfig.helicopterTiltAngle
+        } else {
+            targetAngle = 0
+        }
+
+        // Lerp toward target
+        let lerpSpeed = GameConfig.helicopterTiltLerpSpeed * CGFloat(deltaTime)
+        currentTiltAngle += (targetAngle - currentTiltAngle) * min(lerpSpeed, 1.0)
+
+        // Snap to zero when very close to avoid micro-jitter
+        if abs(currentTiltAngle) < 0.001 && targetAngle == 0 {
+            currentTiltAngle = 0
+        }
+
+        bodyNode.zRotation = currentTiltAngle
     }
 
     // MARK: - Facing with transition animation
@@ -225,11 +254,14 @@ class Helicopter: SKNode {
 
         switch facing {
         case .right:
+            // Tilt adjusts firing angle: negative tilt → nose down-right
+            let angle = currentTiltAngle  // negative when tilting right
             bulletOffset = CGPoint(x: halfW + 5, y: 0)
-            bulletDirection = CGVector(dx: 1, dy: 0)
+            bulletDirection = CGVector(dx: cos(angle), dy: sin(angle))
         case .left:
+            let angle = CGFloat.pi + currentTiltAngle  // positive tilt when moving left
             bulletOffset = CGPoint(x: -(halfW + 5), y: 0)
-            bulletDirection = CGVector(dx: -1, dy: 0)
+            bulletDirection = CGVector(dx: cos(angle), dy: sin(angle))
         case .forward:
             bulletOffset = CGPoint(x: 0, y: -(halfH + 5))
             bulletDirection = CGVector(dx: 0, dy: -1)
@@ -322,6 +354,8 @@ class Helicopter: SKNode {
 
     func land() {
         state = .grounded
+        currentTiltAngle = 0
+        bodyNode.zRotation = 0
         updateVisualSize()
     }
 
@@ -361,9 +395,11 @@ class Helicopter: SKNode {
         bodyNode.texture = texRight
         bodyNode.colorBlendFactor = 0
         bodyNode.alpha = 1.0
+        bodyNode.zRotation = 0
         bodyNode.size = flightSpriteSize
         bodyNode.removeAllActions()
         isUsingCompactVisuals = false
+        currentTiltAngle = 0
 
         removeAction(forKey: "invulnerability")
         setupPhysics()

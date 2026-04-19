@@ -1,0 +1,77 @@
+{
+  "sprite": "helicopter",
+  "frameSize": {
+    "width": 569,
+    "height": 262
+  },
+  "frameCount": 7,
+  "frameDuration": 0.03,
+  "animations": {
+    "fly_right": {
+      "spritesheet": "spritesheet_right.png",
+      "spritesheet_2x": "spritesheet_right@2x.png",
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "loop": true
+    },
+    "fly_left": {
+      "spritesheet": "spritesheet_left.png",
+      "spritesheet_2x": "spritesheet_left@2x.png",
+      "frames": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "loop": true
+    }
+  },
+  "individualFrames": {
+    "right": [
+      "heli_right_0.png",
+      "heli_right_1.png",
+      "heli_right_2.png",
+      "heli_right_3.png",
+      "heli_right_4.png",
+      "heli_right_5.png",
+      "heli_right_6.png"
+    ],
+    "left": [
+      "heli_left_0.png",
+      "heli_left_1.png",
+      "heli_left_2.png",
+      "heli_left_3.png",
+      "heli_left_4.png",
+      "heli_left_5.png",
+      "heli_left_6.png"
+    ],
+    "right_2x": [
+      "heli_right_0@2x.png",
+      "heli_right_1@2x.png",
+      "heli_right_2@2x.png",
+      "heli_right_3@2x.png",
+      "heli_right_4@2x.png",
+      "heli_right_5@2x.png",
+      "heli_right_6@2x.png"
+    ],
+    "left_2x": [
+      "heli_left_0@2x.png",
+      "heli_left_1@2x.png",
+      "heli_left_2@2x.png",
+      "heli_left_3@2x.png",
+      "heli_left_4@2x.png",
+      "heli_left_5@2x.png",
+      "heli_left_6@2x.png"
+    ]
+  }
+}
